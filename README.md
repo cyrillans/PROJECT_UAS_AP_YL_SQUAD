@@ -1,4 +1,4 @@
-# PROJECT_UAS_AP_YL_SQUAD
+
 Nama Kelompok: YL SQUAD
 
 Nama anggota:
@@ -8,7 +8,8 @@ Nama anggota:
   -Rahmania Utami              (241401034)
   -Cyrilla Nathania Silalahi   (241401067)
   -Mutia Elshaday Sidabutar    (241401133)
-Deskripsi Program: Game Tebak Negara, menebak negara yang diberikan secara acak.
+
+Program: Game Tebak Negara, menebak negara yang diberikan secara acak.
 
 Link Screenshot: 
 
