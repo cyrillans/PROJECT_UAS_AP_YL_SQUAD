@@ -9,6 +9,7 @@ Nama anggota:
 5. Mutia Elshaday Sidabutar    (241401133)
 
 Program: Game Tebak Negara, menebak negara yang diberikan secara acak.
+
 Tentang Program :
 1. Setiap ronde, sistem akan mengambil satu nama negara secara acak dari daftar yang telah ditentukan.
 2. Sebagian huruf dari nama negara akan disembunyikan secara acak untuk menciptakan tantangan dalam menebak.
