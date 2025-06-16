@@ -11,6 +11,6 @@ Nama anggota:
 
 Program: Game Tebak Negara, menebak negara yang diberikan secara acak.
 
-Link Screenshot: 
+Link Screenshot: https://drive.google.com/drive/folders/1Ac4jcvUzb_Ge6znD0vDbpq3MQAwUgzP4
 
-Link YouTube: 
+Link YouTube: https://youtu.be/EfK7uwlRSEs?si=-wDN7Fx7qxf7a_Zj
