@@ -1,0 +1,71 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+#include <algorithm>
+#include <random>
+
+using namespace std;
+
+// Daftar negara
+vector<string> daftarNegara = {
+    "norway", "oman", "spain", "france", "thailand", "germany",
+    "brazil", "canada", "italy", "japan", "india",
+    "china", "usa", "mexico", "argentina", "malaysia", "russia",
+    "sweden", "finland", "netherlands", "switzerland", "australia", "indonesia"
+}; //1
+
+// Mengubah string menjadi huruf kecil
+string ubahKeKecil(const string& s) {
+    string hasil = s;
+    transform(hasil.begin(), hasil.end(), hasil.begin(), ::tolower);
+    return hasil;
+} //2
+
+// Mengacak sebagian huruf dari nama negara
+string dapatkanNegaraTeracak(const string& negara) {
+    int jumlahTersembunyi = (negara.length() >= 6) ? 3 : 2;
+    string teracak = negara;
+    vector<int> indeks(teracak.length());
+    iota(indeks.begin(), indeks.end(), 0);
+
+    random_device rd;
+    default_random_engine rng(rd());
+    shuffle(indeks.begin(), indeks.end(), rng);
+
+    for (int i = 0; i < jumlahTersembunyi; ++i) {
+        teracak[indeks[i]] = '_';
+    }
+
+    return teracak;
+} //3
+
+int main() {
+    string tebakan;
+    string negaraAsli = daftarNegara[rand() % daftarNegara.size()];
+    string negaraTeracak = dapatkanNegaraTeracak(negaraAsli);
+    char mainLagi = 'y';
+    int skor = 0;
+
+    srand(static_cast<unsigned int>(time(0))); 
+    while (mainLagi == 'y' || mainLagi == 'Y') {
+        cout << "Tebak negara: " << negaraTeracak << endl;
+        cout << "Negara apakah yang dimaksud? ";
+        cin >> tebakan;//4
+
+        if (ubahKeKecil(tebakan) == negaraAsli) {
+            cout << "Selamat! Anda benar." << endl;
+            skor++;
+        } else {
+            cout << "Maaf, jawaban Anda salah." << endl;
+        }
+
+        cout << "Skor Anda: " << skor << endl;
+        cout << "Ingin bermain lagi? (y/n): ";
+        cin >> mainLagi;
+    }
+
+    cout << "Game Selesai :D" << endl;
+    return 0;//5
+}
