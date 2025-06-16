@@ -42,14 +42,14 @@ string dapatkanNegaraTeracak(const string& negara) {
 } //3
 
 int main() {
-    string tebakan;
-    string negaraAsli = daftarNegara[rand() % daftarNegara.size()];
-    string negaraTeracak = dapatkanNegaraTeracak(negaraAsli);
+    srand(static_cast<unsigned int>(time(0))); 
     char mainLagi = 'y';
     int skor = 0;
 
-    srand(static_cast<unsigned int>(time(0))); 
     while (mainLagi == 'y' || mainLagi == 'Y') {
+        string tebakan;
+        string negaraAsli = daftarNegara[rand() % daftarNegara.size()];
+        string negaraTeracak = dapatkanNegaraTeracak(negaraAsli);
         cout << "Tebak negara: " << negaraTeracak << endl;
         cout << "Negara apakah yang dimaksud? ";
         cin >> tebakan;//4
