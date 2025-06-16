@@ -18,6 +18,6 @@ Tentang Program :
 
 OUTPUT 
 
-Link Screenshot: https://drive.google.com/file/d/1FqiIcC_L0p3aEB6mdCvQRw38Wt9RvWO2/view?usp=sharing
+Link Screenshot: https://drive.google.com/file/d/1gooWq_Pa_nlE5Nr727JxA2QrvH6ZbhXK/view?usp=sharing
 
 Link YouTube: https://youtu.be/EfK7uwlRSEs?si=-wDN7Fx7qxf7a_Zj
